@@ -85,10 +85,10 @@ DATA BLOCK 06 // BONUS TRACK 06: ONE NIGHT I HAD A DREAM
 - TARGET STATE: ALTERED CONSCIOUSNESS // RADICAL SUBVERSION VIA LSD-25 PROTOCOL
 
 
-====================================================================
+==========================================================
 WARNING: DISTRIBUTION RE-ROUTED TO SECTION 23 [@mojo-696]
 AUTHENTICATION CODE: MELLOR-1812-HAMMER // END OF TRANSMISSION //
-====================================================================
+================================================================
 
 ====================================================================
  IN MEMORY OF GEORGE MELLOR, LUDDITE
