@@ -2,6 +2,9 @@
 
 Official repository hosting the visual social documents, classified GCHQ leitmotif stills, and historical Luddite evidence files for the **DARK GENESIS EP** by INFECTED (Huddersfield, 1984).
 
+"He who controls the past controls the future. He who controls the present controls the past."
+George Orwell 1984
+
 ---
 
 ## 📡 BROADCAST & TRANSMISSION LINKS
