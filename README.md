@@ -5,7 +5,7 @@ Official repository hosting the visual social documents, classified GCHQ leitmot
 ---
 
 ## 📡 BROADCAST & TRANSMISSION LINKS
-* **🎬 Video Manifest (Full EP)**: Available on YouTube at **Section 23** -> [@mojo-696](https://youtube.com)
+* **🎬 Video Manifest (Full EP)**: Available on YouTube at **Section 23** -> [@mojo-696](https://www.youtube.com/@mojo-696)
 * **🎛️ Audio Archive (Master WAVs)**: High-fidelity master files are securely archived on Google Drive.
 
 ---
