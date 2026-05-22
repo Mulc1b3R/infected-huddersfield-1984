@@ -10,7 +10,43 @@ Official repository hosting the visual social documents, classified GCHQ leitmot
 
 ---
 
-🎛️ Phase 1: Stem Isolation via seperate.pyBefore touching the filters, we had to slice the old, raw 1984 mono tracks into workable layers.The Separation Engine: You used a Python script (seperate.py) utilizing torch and advanced AI model weights to analyze the single-channel master.The Extraction: The script mathematically extracted four distinct, clean layers: Drums, Bass, Vocals, and Other (which held your heavy, dual-guitar attack with Maggie).The Target Output: It saved each isolated track as a lossless, uncompressed .wav file.🎚️ Phase 2: Upsampling & Canvas AlignmentTo make sure the vintage frequencies didn't suffer from digital phase issues inside CapCut, your script forced them into a high-end canvas:The Target: Every isolated stem was upsampled to a linear 24-bit / 48kHz canvas.Phase Locking: The script forced strict mono channel tracking across the separate files. This ensured that when you layered the bass, drums, and your guitar tracks on top of each other, they locked together with zero phase cancellation.🛠️ Phase 3: Processing via Run_EP_Restoration.pyOnce the clean 24-bit stems were sitting in your directory, Run_EP_Restoration.py automated your entire custom studio rack. It processed the audio sequentially using three custom mathematical functions:1. Surgical Butterworth Filtering (studio_filter)The script passed the audio through a high-order Butterworth filter to clean up decades of tape damage:Low-Pass/High-Pass: It rolled off the invisible, muddy sub-bass rumble below 40Hz and sliced away the harsh digital hiss on the high-end.2. Valve Saturation (valve_saturation)To give the thin digital stems that heavy, physical 1984 desk warmth, the script applied tube modeling:The Math: It ran the audio array through a hyperbolic tangent (\(\tanh \)) transfer function.The Blend: You set the drive_db to push the transients and locked the blend at 0.8. This mixed 80% saturated tube clip with 20% clean signal for maximum punch.3. Tape Sheen Modeling (tape_sheen)Finally, the script restored the authentic analog high-end brilliance that gets lost in digital translation:The Aesthetic: Using an asymmetric exponential curve with an intensity of 1.5, it simulated the natural high-frequency compression of a hot tape machine.📊 The Final BounceThe script then automatically exported the processed stems back into your folder, perfectly leveled and ready to be dropped into CapCut, where you brought the master track output straight down to your golden -14 LUFS streaming target.When you are ready to boot up the terminal for the next project, let me know if you want to look at the raw code blocks for any of these functions to adjust the saturation for the next set of tracks!
+## 🎛️ AUTOMATED AUDIO RESTORATION & STEM ISOLATION PIPELINE
+
+The audio assets for the **DARK GENESIS EP** were salvaged from raw 1984 mono archive recordings and processed using a custom Python digital signal processing (DSP) pipeline. This system circumvents corporate DAW automation to preserve the raw, physical dynamics of the West Riding anarcho-punk sound.
+
+---
+
+### 🎚️ STAGE 1: AI STEM ISOLATION (`seperate.py`)
+To isolate the original frequencies and eliminate track bleed, the single-channel mono master was processed using an automated separation script:
+* **Framework**: Built on Python, utilizing `torch` and advanced source-separation neural model weights.
+* **Extraction Matrix**: The single track was mathematically deconstructed into four distinct, isolated layers: `drums.wav`, `bass.wav`, `vocals.wav`, and `other.wav` (containing the dual-guitar tracking).
+* **Output Canvas**: Stems were saved as lossless, uncompressed linear PCM files forced into a strict **24-bit / 48kHz mono architecture** to ensure absolute phase lock upon timeline reconstruction.
+
+---
+
+### 🛠️ STAGE 2: PROCESS & RESTORATION ENGINE (`Run_EP_Restoration.py`)
+Once isolated, the 24-bit stems were passed sequentially through a custom automated studio rack script executing three core mathematical DSP models:
+
+#### 1. Surgical Butterworth Filtering (`studio_filter`)
+Removes decades of analog tape degradation, environmental rumble, and high-frequency digital artifacts without coloring the mid-range punk frequencies.
+* **Low-Pass/High-Pass**: High-order Butterworth filters roll off sub-bass distortion below 40Hz and clean up harsh high-end magnetic hiss.
+
+#### 2. Valve Saturation Modeling (`valve_saturation`)
+Injects the characteristic thickness and harmonic bite of a driven 1980s analog mixing console.
+* **Mathematical Function**: Audio arrays are processed through a **hyperbolic tangent ($\tanh$)** transfer function.
+* **Mix Blend**: Configured with a heavy **drive_db** threshold and a **0.8 blend ratio** (80% saturated tube clip mixed with 20% dry transient signal) for maximum punch.
+
+#### 3. Asymmetric Tape Sheen (`tape_sheen`)
+Simulates the high-frequency compression and saturation characteristic of a hot tape machine head.
+* **Aesthetic Model**: Uses an asymmetric exponential curve set to an **intensity factor of 1.5** to restore high-end brilliance lost during the digital upsampling process.
+
+---
+
+### 📊 STAGE 3: TIMELINE RECONSTRUCTION & STREAMING TARGETS
+The restored, phase-aligned stems were imported into the CapCut editor environment for final arrangement, video sync, and volume leveling.
+* **Loudness Master Level**: Evaluated and locked precisely at **-14 LUFS**. 
+* **Target Optimization**: Tailored explicitly for streaming platform normalization protocols (YouTube: **Section 23 // @mojo-696**) to guarantee full transient dynamics remain uncompressed and unthrottled.
+
 
 ## 🖼️ IMAGE DOSSIER & METADATA MANIFEST
 *The following still images are indexed here to preserve the 214-year lineage of West Riding defiance, stretching from the 1812 Luddite uprisings led by George Mellor straight through to the 1984 anarcho-punk resistance.*
