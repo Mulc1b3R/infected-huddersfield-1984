@@ -1,7 +1,7 @@
 # INFECTED - Huddersfield 1984 Anarcho-Punk Archive
 
 Official repository hosting the visual social documents, classified GCHQ leitmotif stills, and historical Luddite evidence files for the **DARK GENESIS EP** by THE INFECTED (Huddersfield, 1984).
-Anarcho Punk. PEACEWORKS WHOLEFOOD.
+Anarcho Punk. PEACEWORKS WHOLEFOOD CO op.
 
 "He who controls the past controls the future. He who controls the present controls the past."
 George Orwell 1984
