@@ -50,7 +50,7 @@ All materials restored, compiled, and rendered using manual technological pipeli
 * **Source Control**: Full version-control tracking via automated Python DSP execution blocks (`seperate.py`, `Run_EP_Restoration.py`, `mutate.py`).
 
 ====================================================================
-LINEAGE RECORD: IN MEMORY OF GEORGE MELLOR,LUDDITE
+ IN MEMORY OF GEORGE MELLOR, LUDDITE
 COMMANDER OF THE LONGROYD BRIDGE CROPPERS, RAWFLODS MILL ATTACK (1812).
 ====================================================================
 
